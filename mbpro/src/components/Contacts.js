@@ -2,7 +2,7 @@ import React from "react";
 
 const Contacts = () => {
   return (
-    <section className="h-[100hv]">
+    <section id="contacts" className="h-[100hv]">
       <h2>Contacts</h2>
       <div>
         <h1>EMAIL: mbprogestion@outlook.fr</h1>

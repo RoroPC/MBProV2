@@ -2,7 +2,7 @@ import React from "react";
 
 const Rdv = () => {
   return (
-    <div>
+    <div id="rdv">
       <h2>rendez-vous</h2>
       <div>
         <form
