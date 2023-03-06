@@ -2,7 +2,7 @@ import React from "react";
 
 const Rdv = () => {
   return (
-    <div id="rdv">
+    <div id="rdv" className="h-[100vh]">
       <h2>rendez-vous</h2>
       <div>
         <form

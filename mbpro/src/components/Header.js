@@ -4,9 +4,9 @@ const Header = () => {
   return (
     <header
       id="header"
-      className="h-[100vh] flex flex-col justify-start items-center "
+      className="h-[100vh] pt-5  flex flex-col justify-start items-center "
     >
-      <img src={Logo} alt="" />
+      <img src={Logo} alt="" className="object-scale-down h-[10%]" />
       <h1>Entreprenez avec MB PRO Gestion</h1>
       <h2>
         ©MB<font color="7A4FA2">Pro</font>Gestion

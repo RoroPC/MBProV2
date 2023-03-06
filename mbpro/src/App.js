@@ -8,7 +8,7 @@ import Rdv from "./components/Rdv";
 
 const App = () => {
   return (
-    <div className="h-[200vh] bg-gradient-to-b from-white via-[#4c435e] to-[#4c435e] ">
+    <div className="bg-[#9b97a3] ">
       <Nav />
       <Header />
       <Infos />
