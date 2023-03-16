@@ -1,59 +1,24 @@
 import React from "react";
+import Formulaire from "./Formulaire";
 
 const Rdv = () => {
   return (
-    <div id="rdv" className="h-[100vh]">
-      <h2>rendez-vous</h2>
-      <div>
-        <form
-          action="formulaire.php"
-          method="POST"
-          id="my-form"
-          className="flex flex-col items-center h-[100vh] justify-evenly"
-        >
-          <div className="flex flex-col items-center">
-            <label for="prénom"> Prénom</label>
-            <input type="text" id="prénom" name="prénom" />
-          </div>
-
-          <div className="flex flex-col items-center">
-            <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom" />
-          </div>
-
-          <div className="flex flex-col items-center">
-            <label for="téléphone">Téléphone</label>
-            <input
-              type="tel"
-              id="téléphone"
-              name="téléphone"
-              pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}"
-            />
-            <small>Format: 0607080910</small>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <label for="adresse">Adresse</label>
-            <input type="text" id="adresse" name="adresse" />
-          </div>
-
-          <div className="flex flex-col items-center">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
-          </div>
-
-          <div className="flex flex-col items-center">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="3"></textarea>
-            <small>
-              Quand souhaitez vous être contacté (jour, matinée, après midi ...)
-              et quel est votre projet
+    <div
+      id="rdv"
+      className="relative h-[100vh] flex flex-col justify-center items-center my-auto"
+    >
+      <div className="flex  mb-[20vh] mr-[20vh] justify-center items-center h-2/3 w-1/2 border-2 rounded-lg  bg-[#830049]/80 z-51">
+        <div className="flex flex-col items-start  bg-[#830049] rounded-lg w-[90%] h-[90%] justify-center">
+          <div className="ml-[5vh] mt-[15vh] h-[90vh] w-[20vh]">
+            <small className="text-white text-[2vh]">
+              Nous vous encourageons à nous contacter en remplissant le
+              formulaire si vous souhaitez prendre rendez-vous
             </small>
           </div>
-          <div id="status"></div>
-
-          <button type="submit">Envoyer</button>
-        </form>
+        </div>
+      </div>
+      <div className="flex absolute mt-[20vh] ml-[50vh] justify-center items-center h-2/3 w-1/2 border-2 border-[#830049] rounded-lg  bg-white/80 ">
+        <Formulaire />
       </div>
     </div>
   );

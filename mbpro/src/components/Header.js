@@ -9,7 +9,7 @@ const Header = () => {
       <img src={Logo} alt="" className="object-scale-down h-[10%]" />
       <h1>Entreprenez avec MB PRO Gestion</h1>
       <h2>
-        ©MB<font color="7A4FA2">Pro</font>Gestion
+        ©MB<font color="830049">Pro</font>Gestion
       </h2>
       <h2>Meliani B.</h2>
     </header>

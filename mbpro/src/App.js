@@ -1,7 +1,7 @@
 import React from "react";
 
 import Contacts from "./components/Contacts";
-import Nav from "./components/Nav";
+import NavPortrait from "./components/NavPortrait";
 import Header from "./components/Header";
 import Infos from "./components/Infos";
 import Rdv from "./components/Rdv";
@@ -9,7 +9,7 @@ import Rdv from "./components/Rdv";
 const App = () => {
   return (
     <div className="bg-[#9b97a3] ">
-      <Nav />
+      <NavPortrait />
       <Header />
       <Infos />
       <Contacts />
