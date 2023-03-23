@@ -1,18 +1,20 @@
 import React from "react";
 
 import Contacts from "./components/Contacts";
-import NavPortrait from "./components/NavPortrait";
+import NavP from "./components/NavP";
+import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Infos from "./components/Infos";
 import Rdv from "./components/Rdv";
+import ContactsP from "./components/ContactsP";
 
 const App = () => {
   return (
-    <div className="bg-[#9b97a3] ">
-      <NavPortrait />
+    <div className=" bg-[#383e42] font-[Lora] ">
+      <NavP />
       <Header />
       <Infos />
-      <Contacts />
+      <ContactsP />
       <Rdv />
     </div>
   );

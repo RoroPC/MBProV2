@@ -52,7 +52,7 @@ const Formulaire_Rdv = () => {
     <form
       action="#"
       id="my-form"
-      className="relative flex flex-col items-center bg-white rounded-lg w-[90%] h-[90%] justify-evenly"
+      className="relative flex flex-col items-center bg-[white] rounded-lg w-[90%] h-[90%] justify-evenly"
     >
       <div className="flex flex-col items-center relative h-[8%] bg-[#830049]/80 border border-black rounded-lg ">
         <label className=" h-[50%] text-[white] text-[1.5vh]" htmlFor="prénom">
@@ -134,7 +134,10 @@ const Formulaire_Rdv = () => {
       </div>
 
       <div className="flex flex-col items-center relative h-[12%] bg-[#830049]/80 border border-black rounded-lg ">
-        <label className=" h-[30%] text-[white]" htmlFor="message">
+        <label
+          className=" h-[30%] text-[white] flex justify-center pb-[0.5vh] items-center"
+          htmlFor="message"
+        >
           Message
         </label>
         <textarea
@@ -154,7 +157,7 @@ const Formulaire_Rdv = () => {
       <button
         type="submit"
         onClick={(e) => handleSubmit(e)}
-        className="w-[40vh] h-[5%] border border-black text-center text-[1.5vh] rounded-lg bg-white hover:bg-[#830049]/80 hover:text-white transition"
+        className="w-[30vh] h-[5%] border border-black text-center text-[1.5vh] rounded-lg bg-slate-100 hover:bg-[#830049]/80 hover:text-white transition"
       >
         Envoyer
       </button>
