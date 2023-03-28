@@ -52,10 +52,13 @@ const Formulaire_Rdv = () => {
     <form
       action="#"
       id="my-form"
-      className="relative flex flex-col items-center bg-[white] rounded-lg w-[90%] h-[90%] justify-evenly"
+      className="relative flex flex-col items-center bg-[white] rounded-sm w-[90%] h-[90%] justify-evenly"
     >
-      <div className="flex flex-col items-center relative h-[8%] bg-[#830049]/80 border border-black rounded-lg ">
-        <label className=" h-[50%] text-[white] text-[1.5vh]" htmlFor="prénom">
+      <div className="flex flex-col items-center relative h-[8%] w-[18vw] bg-[#830049]/80 border border-black rounded-sm ">
+        <label
+          className=" w-full h-[50%] text-[white] text-[0.8vw] flex justify-center items-center"
+          htmlFor="prénom"
+        >
           {" "}
           Prénom
         </label>
@@ -66,12 +69,15 @@ const Formulaire_Rdv = () => {
           placeholder="Pierre"
           id="prénom"
           name="prénom"
-          className="rounded-b-md text-[1.5vh] h-[50%]"
+          className="rounded-b-sm w-full text-[0.8vw] h-[50%]"
         />
       </div>
 
-      <div className="flex flex-col items-center relative h-[8%] bg-[#830049]/80 border border-black rounded-lg ">
-        <label className=" h-[50%] text-[white] text-[1.5vh] " htmlFor="nom">
+      <div className="flex flex-col items-center relative h-[8%] w-[18vw] bg-[#830049]/80 border border-black rounded-sm ">
+        <label
+          className=" w-full h-[50%] text-[white] text-[0.8vw] flex justify-center items-center "
+          htmlFor="nom"
+        >
           Nom
         </label>
         <input
@@ -81,13 +87,13 @@ const Formulaire_Rdv = () => {
           placeholder="Dupont"
           id="nom"
           name="nom"
-          className=" rounded-b-md text-[1.5vh] h-[50%]"
+          className=" rounded-b-sm w-full text-[0.8vw] h-[50%]"
         />
       </div>
 
-      <div className="flex flex-col items-center relative h-[8%] bg-[#830049]/80 border border-black rounded-lg ">
+      <div className="flex flex-col items-center relative h-[8%] w-[18vw] bg-[#830049]/80 border border-black rounded-sm ">
         <label
-          className=" h-[50%] text-[white] text-[1.5vh]"
+          className=" w-full h-[50%] text-[white] text-[0.8vw] flex justify-center items-center"
           htmlFor="téléphone"
         >
           Téléphone
@@ -100,11 +106,14 @@ const Formulaire_Rdv = () => {
           id="téléphone"
           name="téléphone"
           pattern="[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}[0-9]{2}"
-          className="rounded-b-md text-[1.5vh] h-[50%]"
+          className="rounded-b-sm w-full text-[0.8vw] h-[50%]"
         />
       </div>
-      <div className="flex flex-col items-center relative h-[8%] bg-[#830049]/80 border border-black rounded-lg ">
-        <label className=" h-[50%] text-[white] text-[1.5vh]" htmlFor="adresse">
+      <div className="flex flex-col items-center relative h-[8%] w-[18vw] bg-[#830049]/80 border border-black rounded-sm ">
+        <label
+          className=" w-full h-[50%] text-[white] text-[0.8vw] flex justify-center items-center"
+          htmlFor="adresse"
+        >
           Adresse
         </label>
         <input
@@ -114,12 +123,15 @@ const Formulaire_Rdv = () => {
           placeholder="1 rue de l'exemple, 91340 LISSES"
           id="adresse"
           name="adresse"
-          className="rounded-b-md text-[1.5vh] h-[50%]"
+          className="rounded-b-sm w-full text-[0.8vw] h-[50%]"
         />
       </div>
 
-      <div className="flex flex-col items-center relative h-[8%] bg-[#830049]/80 border border-black rounded-lg ">
-        <label className=" h-[50%] text-[white] text-[1.5vh]" htmlFor="email">
+      <div className="flex flex-col items-center relative h-[8%] w-[18vw] bg-[#830049]/80 border border-black rounded-sm ">
+        <label
+          className=" w-full h-[50%] text-[white] text-[0.8vw] flex justify-center items-center"
+          htmlFor="email"
+        >
           Email
         </label>
         <input
@@ -129,13 +141,13 @@ const Formulaire_Rdv = () => {
           placeholder="pierre.dupont@email.com"
           id="email"
           name="email"
-          className="rounded-b-md text-[1.5vh] h-[50%] "
+          className="rounded-b-sm w-full text-[0.8vw] h-[50%] "
         />
       </div>
 
-      <div className="flex flex-col items-center relative h-[12%] bg-[#830049]/80 border border-black rounded-lg ">
+      <div className="flex flex-col items-center relative h-[12%] w-[18vw] bg-[#830049]/80 border border-black rounded-sm ">
         <label
-          className=" h-[30%] text-[white] flex justify-center pb-[0.5vh] items-center"
+          className=" w-full h-[30%] text-[white] text-[0.8vw] flex justify-center items-center"
           htmlFor="message"
         >
           Message
@@ -147,17 +159,17 @@ const Formulaire_Rdv = () => {
           id="message"
           cols="30"
           rows="2"
-          className="rounded-b-md text-[1.5vh] h-[70%]"
+          className="rounded-b-sm w-full text-[0.8vw] h-[70%] resize-none"
         ></textarea>
       </div>
-      <small className="h-[8%] text-[1.5vh]">
+      <small className="h-[8%] text-[0.8vw]">
         Quand souhaitez vous être contacté (jour, matinée, après midi ...) et
         quel est votre projet
       </small>
       <button
         type="submit"
         onClick={(e) => handleSubmit(e)}
-        className="w-[30vh] h-[5%] border border-black text-center text-[1.5vh] rounded-lg bg-slate-100 hover:bg-[#830049]/80 hover:text-white transition"
+        className="w-[18vw] h-[5%] border border-black text-center text-[0.8vw] rounded-sm bg-slate-100 hover:bg-[#830049]/80 hover:text-white transition"
       >
         Envoyer
       </button>
