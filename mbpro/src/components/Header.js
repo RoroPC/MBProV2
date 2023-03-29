@@ -35,7 +35,7 @@ const Header = () => {
     return (
       <header
         id="header"
-        className="h-[100vh]   flex flex-col justify-start items-center border-b border-white "
+        className=" h-[100vh]  flex flex-col justify-start items-center border-b border-white "
       >
         <div className=" h-[25vh] w-full flex flex-col justify-start items-center pt-5 bg-white border-2 border-white">
           <img src={Logo} alt="" className="object-scale-down h-[50%]" />
@@ -47,18 +47,18 @@ const Header = () => {
           </h2>
           <h2 className=" h-[3vh] text-[2vh]  ">Meliani B.</h2>
         </div>
-        <div className="border w-[89vw] my-auto ml-[15vw] text-[325%] font-[Ramabhadra] text-center flex items-center justify-center flex-row">
+        <div className="border my-auto w-[80vw] ml-[10vw] text-[8vh] font-[Ramabhadra] text-center flex items-center justify-between flex-row">
           <img
             src={Image1}
             alt=""
-            className=" h-[40%] border-[1vh] border-[#830049]"
+            className=" h-[30vh] border-[1vh] border-[#830049]"
           />
           MB <font className="text-[#830049]"> PRO </font>
           GESTION
           <img
             src={Image2}
             alt=""
-            className=" h-[40%] border-[1vh] border-[#830049]"
+            className=" h-[30vh] border-[1vh] border-[#830049]"
           />
         </div>
       </header>

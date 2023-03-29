@@ -3,7 +3,7 @@ import { useState } from "react";
 import Axios from "axios";
 
 const Formulaire_Rdv = () => {
-  const url = "http://localhost:8000/formulaire_mbprov2.php";
+  const url = "https://mbprogestion.fr/formulaire_mbprov2.php";
   const [data, setData] = useState({
     prénom: "",
     nom: "",

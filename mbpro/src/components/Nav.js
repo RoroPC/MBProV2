@@ -56,9 +56,8 @@ const Nav = () => {
     );
   } else {
     return (
-      <nav className="fixed  h-[100vh] bg-[#383e42] z-50 overflow-hidden">
-        <div className="h-full container my-[10vh]">
-          {}
+      <nav className="fixed h-[100vh] bg-[#383e42] z-50 overflow-hidden">
+        <div className="h-full container my-[10vh] ">
           <div className="h-full  rounded-lg w-[21vh] max-h-[80vh] my-auto pt-[20vh] py-[10vh]  flex flex-col justify-between items-center ">
             <Link
               to="header"
