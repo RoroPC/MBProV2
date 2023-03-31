@@ -47,18 +47,20 @@ const Header = () => {
           </h2>
           <h2 className=" h-[3vh] text-[2vh]  ">Meliani B.</h2>
         </div>
-        <div className="border my-auto w-[80vw] ml-[10vw] text-[7vh] font-[Ramabhadra] text-center flex items-center justify-between flex-row">
+        <div className="border my-auto w-[80vw] ml-[10vw] text-[7vh] font-[Ramabhadra] text-white text-center flex items-center justify-between flex-row">
           <img
             src={Image1}
             alt=""
-            className=" h-[30vh] border-[1vh] border-[#830049]"
+            className=" h-[30vh] w-[25vw] border-[1vh] border-[#830049]"
           />
-          MB <font className="text-[#830049]"> PRO </font>
-          GESTION
+          <div className=" w-[30vw]">
+            MB <font className="text-[#830049]"> PRO </font>
+            GESTION
+          </div>
           <img
             src={Image2}
             alt=""
-            className=" h-[30vh]  border-[1vh] border-[#830049]"
+            className=" h-[30vh] w-[25vw]  border-[1vh] border-[#830049]"
           />
         </div>
       </header>
