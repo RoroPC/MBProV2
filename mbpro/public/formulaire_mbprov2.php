@@ -15,12 +15,8 @@ if ($_POST) {
   $message = $_POST["message"];
 
   //Data Base Connection
-  $conn = new mysqli();
+  $conn = new mysqli("localhost", "root", "Mimounalina24?", "RDV");
 
-  // "localhost",
-  // "root",
-  // "Mimounalina24?",
-  // "RDV"
   if ($conn->connect_error) {
     die($conn->connect_error);
   } else {

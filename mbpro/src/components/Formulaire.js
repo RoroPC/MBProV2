@@ -99,7 +99,7 @@ const Formulaire_Rdv = () => {
           Téléphone
         </label>
         <input
-          type="tel"
+          type="text"
           onChange={(e) => handleChange(e)}
           value={data.téléphone}
           placeholder="06 05 04 03 02"
